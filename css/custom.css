@@ -1,0 +1,388 @@
+/* 
+    Document   : custom
+    Created on : Jun 11, 2014, 10:01:21 AM
+    Author     : quickstart hari
+    Description:
+        Purpose of the stylesheet follows.
+
+Add in all customizations for JPs garden. This css file should get priority.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.container {
+  max-width: 1000px;
+}
+
+/* 
+   Have the JPs bottle banner as background for the header and footer
+*/
+#page > header,  #page > footer {
+/*  background-image: url('../img/background_images/bannerbrown.png');*/
+  background-size: 1300px 100%;
+}
+
+
+/* 
+ Logo in left, branding center alligned
+*/
+#branding {
+  float: none;
+  width: 100%;
+  display: block;
+  margin: 0; 
+}
+
+#name-and-slogan {
+    float: right;
+}
+
+#logo {
+  /*  background-image: url('../img/JPs_Garden_4C_Logo.jpg');*/
+}
+
+img.site-logo {
+  display: block;
+  margin: 15px auto;
+}
+
+/* 
+   Main Menu
+*/
+.region-top-menu {
+  float: none; 
+  background-color: transparent;
+}
+
+
+.region-top-menu .block-inner {
+  margin: 5px 10px;
+}
+
+.mb-fa ul.menu {
+  padding: 0 1em 0 0;
+}
+
+#page, body {
+  background-color: #FFFEEC;
+}
+
+
+ul.secondary, .section-collapsible, .region-highlighted, #columns {
+  background-color: transparent;
+}
+
+th, td {
+  border: medium hidden;
+}
+
+/* Remove background colors
+*/
+.breadcrumb, #page > footer, #page > footer .block-title, footer, footer .block-title {
+  background-color: transparent;
+
+}
+
+/* Menu colors
+*/
+.region-top-menu li a.active {
+  color: #c2c456;
+  text-decoration: underline;
+}
+
+li a {
+  color: #5f4324;
+}
+
+.region-top-menu ul.menu li:after {
+  content: "/";
+}
+.region-top-menu ul.menu li.last:after {
+  content:"";
+}
+
+.region-top-menu ul.menu a {
+  font-family: 'vktsdistress';
+  font-size: 1.4em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#content-column, .region-sidebar-first, .region-sidebar-second {
+  min-height: 10px; 
+  margin-bottom: 0px;
+  margin-top: 0px; 
+}
+
+/**
+Fonts
+*/
+
+.body, .block-title {
+  font-size: 1 em;
+  font-family: 'Arial', 'Helvetica', 'sans-serif', 'Trebuchet MS', 'Helvetica Neue';
+}
+
+h1, h2, h3, h4 {
+  color: #5f4324;
+}
+
+a, a:visited {
+  color: #5f4324;
+}
+
+.breadcrumb a, #page > footer a, #page > footer a:visited, footer a, footer a:visited {
+  color: #5f4324;
+  font-weight: 800;
+}
+
+.breadcrumb, #page > footer, #page > footer .block-title, footer, footer .block-title {
+  color: #5f4324;
+}
+.block-title {
+  color: #5f4324;  
+}
+
+.breadcrumb a:hover, .breadcrumb a:focus, .breadcrumb a:active, #page > footer a:hover, #page > footer a:focus, #page > footer a:active, footer a:hover, footer a:focus, footer a:active {
+  /*color: #c2c456;*/
+  font-size: 1.05em;
+}
+
+a:hover, a:focus, a:active {
+  color: #5f4324
+}
+
+html, body {
+  color: #5f4324;  
+}
+
+/*
+Format teasers*/
+.front div.views-field.views-field-title {
+  text-align: center;
+}
+
+div.teaser-frame {
+  width: 294px;
+  height: 322px;
+}
+
+div.frame-image {
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 294px 354px;
+}
+
+.col-1 div.frame-image, .views-row-odd div.frame-image {
+  background-image: url('../img/background_images/teaser_frame1.png');
+  width: 294px;
+  height: 354px;
+}
+.col-2 div.frame-image, .views-row-even div.frame-image {
+  background-image: url('../img/background_images/teaser_frame2.png');
+  width: 305px;
+  height: 371px;
+}
+
+.view-blog-posts .col-2 img.image-style-teaser-front, .view-rezepte .col-2 img.image-style-teaser-front {
+  padding-top: 10px;
+}
+
+.col-3 div.frame-image {
+  background-image: url('../img/background_images/teaser_frame3.png');
+  width: 305px;
+  height: 371px;
+}
+
+.teaser-frame .teaser-title {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.views-view-grid .field-content {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.view-blog-posts .views-view-grid .field-content, .view-rezepte .views-view-grid .field-content  {
+  margin-bottom: 70px;
+}
+
+.view-blog-posts img.image-style-teaser-front, .view-rezepte img.image-style-teaser-front {
+  margin: 30px 7px 0 7px;
+}
+
+.view-blog-posts .views-row-even img.image-style-teaser-front, .view-blog-posts td.col-2 img.image-style-teaser-front, .view-rezepte td.col-2 img.image-style-teaser-front {
+  margin: 37px 7px 0 7px;
+}
+
+#block-views-blog-posts-block h2.block-title, #block-views-rezepte-block h2.block-title {
+  display: none;
+}
+
+/*Format tables*/
+tr td:last-child {
+  border-right-style: none;
+}
+table { 
+  border: none;
+}
+tr.even, tr.odd {
+  background-color: transparent;
+}
+
+/*Blog View Page*/
+.view-blog-posts.view-display-id-page img.image-style-teaser-front {
+  max-width: inherit;
+}
+
+.view-blog-posts.view-display-id-page div.views-field.views-field-created {
+  text-align: right;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.view-blog-posts.view-display-id-page div.views-field.views-field-nothing {
+  float: left;
+  width: 324px;
+  height: 360px;
+}
+
+/*Blog node page*/
+
+
+.view-blog-posts.view-display-id-page div.views-row {
+  clear: left;
+}
+
+.view-blog-posts a.views-more-link {
+  font-weight: 800;
+}
+
+/*Dressings Page*/
+.view-dressings-header-image {
+  float: right;
+}
+
+.view-dressings .view-content {
+  clear: right;
+}
+div.views-field.views-field-title .field-content {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.view-dressings .views-view-grid .views-field.views-field-title, .view-dressings .views-view-grid .views-field.views-field-body {
+  padding: 0 15px;
+  
+  position: absolute;
+  margin-right: 10px
+}
+
+.view-dressings .views-field.views-field-title {
+  top: 350px;
+}
+
+.view-dressings .views-field.views-field-body {
+  top: 375px;
+}
+
+div.view-dressings .views-field-body .field-content {
+  font-size: 12px;
+  text-align: justify;
+}
+div.view-dressings .views-field-field-dressing-teaser .field-content img {
+  max-width: none;
+  border: solid 1px #e6e4de;
+  padding-bottom: 50px;
+}
+
+.view-dressings .views-view-grid .span4 {
+  padding-bottom: 0px;
+  padding-right: 0px;
+  position: relative;
+  float: left;
+  width: 320px;
+}
+
+#boxes-box-facebook_sideblock {
+  margin-top: 10px;
+}
+
+/*Hide Page Title for pages that have a menu*/
+.section-uberuns #page-title {
+  display: none;
+}
+
+#page-title {
+  font-size: 1.4em;
+}
+
+article > header {
+  border-bottom: none;
+
+}
+
+/*Blog page formatting**/
+div.field.field-name-field-blog-teaser.field-type-image.field-label-hidden.view-mode-full {
+  float: left;
+  width: 344px;
+}
+
+
+/*Site text formatting*/
+div.field-name-body.view-mode-full, div.field-name-body.view-mode-full, section.panel-pane .block-content {
+  text-align: justify;
+}
+
+/*Firefox formatting bugs
+#content-column {
+    float: none !important;
+}**/
+.region-tertiary-content {
+  clear: left; 
+}
+
+.region-highlighted {
+  padding: 0; 
+}
+
+.region-tertiary-content {
+  padding-bottom: 0; 
+}
+
+div#block-boxes-socialmedia-buttons {
+  float: right;
+  margin-top: 9px;
+}
+
+.node-content img {
+  /*border: solid 1px #e6e4de;
+  -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+  -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+  box-shadow: 0px 1px 5px 0px #4a4a4a;
+  position: relative;*/
+  padding: 0px;
+}
+
+.theme-default .nivoSlider {
+  position: relative;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.pluginFacepile li {
+  -webkit-box-shadow: 0px 1px 1px 0px #4a4a4a;
+  -moz-box-shadow: 0px 1px 1px 0px #4a4a4a;
+  box-shadow: 0px 1px 1px 0px #4a4a4a;
+  border: solid 1px #e6e4de;
+}
