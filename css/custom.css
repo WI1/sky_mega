@@ -95,7 +95,7 @@ th, td {
 }
 
 li a {
-  color: #5f4324;
+  color: #122f53;
 }
 
 .region-top-menu ul.menu li:after {
@@ -132,17 +132,17 @@ Fonts
 }
 
 h1, h2, h3, h4 {
-  color: #5f4324;
+  color: #122f53;
 }
 
 
 .breadcrumb a, #page > footer a, #page > footer a:visited, footer a, footer a:visited {
-  color: #5f4324;
+  color: #122f53;
   font-weight: 800;
 }
 
 .breadcrumb, #page > footer, #page > footer .block-title, footer, footer .block-title {
-  color: #5f4324;
+  color: #122f53;
 }
 
 
@@ -152,11 +152,11 @@ h1, h2, h3, h4 {
 }
 
 a:hover, a:focus, a:active {
-  color: #5f4324
+  color: #122f53
 }
 
 html, body {
-  color: #5f4324;  
+  color: #122f53;  
 }
 
 /*
