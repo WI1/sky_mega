@@ -17,11 +17,11 @@
           <div id="name-and-slogan"<?php print $hgroup_attributes; ?>>
 
             <?php if ($site_name): ?>
-              <h1 id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
+              <div id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></div>
             <?php endif; ?>
 
             <?php if ($site_slogan): ?>
-              <h2 id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
+              <div id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></div>
             <?php endif; ?>
 
           </div><!-- /end #name-and-slogan -->
