@@ -35,6 +35,11 @@
 
     </div><!-- /end  limited width container -->
   </header>
+  <section id="hero" class="clearfix" role="banner">
+      <div class="container">
+          <?php print render($page['hero-banner']); ?>
+      </div><!-- /end  limited width container -->
+  </section>
   <div class="container">
   <?php print render($page['menu_bar']); ?>
   <?php print render($page['top_menu']); ?>
