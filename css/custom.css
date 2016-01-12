@@ -84,12 +84,7 @@ th, td {
 
 }
 
-/* Menu colors
-*/
-.region-top-menu li a.active {
-  color: #c2c456;
-  text-decoration: underline;
-}
+
 
 li a {
   color: #122f53;
@@ -103,10 +98,8 @@ li a {
 }
 
 .region-top-menu ul.menu a {
-  font-family: 'vktsdistress';
   font-size: 1.4em;
   font-weight: 800;
-  text-transform: uppercase;
 }
 
 #content-column, .region-sidebar-first, .region-sidebar-second {
