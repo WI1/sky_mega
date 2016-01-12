@@ -24,6 +24,7 @@
   stylesheets[all][] = color/colors.css
   stylesheets[all][] = css/sky.settings.style.css
   stylesheets[all][] = css/custom.css
+  stylesheets[all][] = css/wi1fau.css
   stylesheets[print][] = css/print.css
   stylesheets[all][] = fonts/stylesheet.css
 
@@ -68,7 +69,8 @@
   regions[sidebar_second]    = Sidebar second
   regions[top_menu]          = Top menu bar
   regions[header]            = Header
-  regions[menu_bar]          = Menu Bar
+  regions[hero-banner]       = Hero Banner
+  regions[menu_bar]          = Main Menu Bar
   regions[help]              = Help
   regions[highlighted]       = Highlighted
   regions[content]           = Main content
