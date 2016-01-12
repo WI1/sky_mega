@@ -27,12 +27,12 @@
           </div><!-- /end #name-and-slogan -->
 
         <?php endif; ?>
-
+          <?php print render($page['top_menu']); ?>
       </div><!-- /end #branding -->
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-    <?php print render($page['top_menu']); ?>
+
     </div><!-- /end  limited width container -->
   </header>
   <section id="hero" class="clearfix" role="banner">
