@@ -20,7 +20,7 @@
 */
 #page > header,  #page > footer {
 /*  background-image: url('../img/background_images/bannerbrown.png');*/
-/*  background-size: 1300px 100%;*/
+  background-size: 1300px 100%;
 }
 
 
@@ -53,7 +53,7 @@ img.site-logo {
 */
 .region-top-menu {
   float: none; 
-/*  background-color: transparent;*/
+  background-color: transparent;
 }
 
 
@@ -66,12 +66,12 @@ img.site-logo {
 }
 
 #page, body {
-/*  background-color: transparent;*/
+  background-color: transparent;
 }
 
 
 ul.secondary, .section-collapsible, .region-highlighted, #columns {
-/*  background-color: transparent;*/
+  background-color: transparent;
 }
 
 th, td {
@@ -125,27 +125,27 @@ Fonts
 
 .body, .block-title {
   font-size: 1 em;
-/*  font-family: 'Arial', 'Helvetica', 'sans-serif', 'Trebuchet MS', 'Helvetica Neue';*/
+  font-family: 'Arial', 'Helvetica', 'sans-serif', 'Trebuchet MS', 'Helvetica Neue';
 }
 
 h1, h2, h3, h4 {
-/*  color: #122f53;*/
+  color: #122f53;
 }
 
 
 .breadcrumb a, #page > footer a, #page > footer a:visited, footer a, footer a:visited {
-/*  color: #122f53;
-  font-weight: 800;*/
+  color: #122f53;
+  font-weight: 800;
 }
 
 .breadcrumb, #page > footer, #page > footer .block-title, footer, footer .block-title {
-/*  color: #122f53;*/
+  color: #122f53;
 }
 
 
 .breadcrumb a:hover, .breadcrumb a:focus, .breadcrumb a:active, #page > footer a:hover, #page > footer a:focus, #page > footer a:active, footer a:hover, footer a:focus, footer a:active {
-  /*color: #c2c456;
-  font-size: 1.05em;*/
+  /*color: #c2c456;*/
+  font-size: 1.05em;
 }
 
 a:hover, a:focus, a:active {
@@ -153,7 +153,7 @@ a:hover, a:focus, a:active {
 }
 
 html, body {
-/*  color: #122f53; */ 
+  color: #122f53;  
 }
 
 /*
@@ -173,7 +173,84 @@ div.frame-image {
   background-size: 294px 354px;
 }
 
+.col-1 div.frame-image, .views-row-odd div.frame-image {
+  background-image: url('../img/background_images/teaser_frame1.png');
+  width: 294px;
+  height: 354px;
+}
+.col-2 div.frame-image, .views-row-even div.frame-image {
+  background-image: url('../img/background_images/teaser_frame2.png');
+  width: 305px;
+  height: 371px;
+}
 
+.view-blog-posts .col-2 img.image-style-teaser-front, .view-rezepte .col-2 img.image-style-teaser-front {
+  padding-top: 10px;
+}
+
+.col-3 div.frame-image {
+  background-image: url('../img/background_images/teaser_frame3.png');
+  width: 305px;
+  height: 371px;
+}
+
+.teaser-frame .teaser-title {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.views-view-grid .field-content {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.view-blog-posts .views-view-grid .field-content, .view-rezepte .views-view-grid .field-content  {
+  margin-bottom: 70px;
+}
+
+.view-blog-posts img.image-style-teaser-front, .view-rezepte img.image-style-teaser-front {
+  margin: 30px 7px 0 7px;
+}
+
+.view-blog-posts .views-row-even img.image-style-teaser-front, .view-blog-posts td.col-2 img.image-style-teaser-front, .view-rezepte td.col-2 img.image-style-teaser-front {
+  margin: 37px 7px 0 7px;
+}
+
+#block-views-blog-posts-block h2.block-title, #block-views-rezepte-block h2.block-title {
+  display: none;
+}
+
+/*Format tables*/
+tr td:last-child {
+  border-right-style: none;
+}
+table { 
+  border: none;
+}
+tr.even, tr.odd {
+  background-color: transparent;
+}
+
+/*Blog View Page*/
+.view-blog-posts.view-display-id-page img.image-style-teaser-front {
+  max-width: inherit;
+}
+
+.view-blog-posts.view-display-id-page div.views-field.views-field-created {
+  text-align: right;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 30px;
+}
+
+.view-blog-posts.view-display-id-page div.views-field.views-field-nothing {
+  float: left;
+  width: 324px;
+  height: 360px;
+}
 
 /*Blog node page*/
 
