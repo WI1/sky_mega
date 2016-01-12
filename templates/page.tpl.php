@@ -32,8 +32,7 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
-    <?php print render($page['menu_bar']); ?>
+    <?php print render($page['top_menu']); ?>
     </div><!-- /end  limited width container -->
   </header>
   <section id="hero" class="clearfix" role="banner">
@@ -42,7 +41,7 @@
       </div><!-- /end  limited width container -->
   </section>
   <div class="container">
-  <?php print render($page['top_menu']); ?>
+  <?php print render($page['menu_bar']); ?>
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
     <div class="columns-inner clearfix">
 
