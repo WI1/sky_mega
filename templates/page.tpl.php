@@ -36,7 +36,7 @@
   </header>
   <section id="hero" class="clearfix" role="banner">
       <div class="container">
-          <?php print render($page['hero-banner']); ?>
+          <?php print render($page['hero_banner']); ?>
       </div><!-- /end  limited width container -->
   </section>
   <div class="container">
