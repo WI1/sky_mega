@@ -37,6 +37,7 @@
   <section id="hero" class="clearfix" role="banner">
       <div class="container">
           <?php print render($page['hero_banner']); ?>
+          <?php if ($breadcrumb): print $breadcrumb; endif; ?>
           <?php if ($title): ?>
               <h1 id="page-title"<?php print $attributes; ?>>
                   <?php print $title; ?>
@@ -71,7 +72,6 @@
         </div>
       <?php endif; ?>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
 
       <div id="content-column">
         <div class="content-inner">
