@@ -37,6 +37,12 @@
   <section id="hero" class="clearfix" role="banner">
       <div class="container">
           <?php print render($page['hero_banner']); ?>
+          <?php if ($title): ?>
+              <h1 id="page-title"<?php print $attributes; ?>>
+                  <?php print $title; ?>
+              </h1>
+          <?php endif; ?>
+
       </div><!-- /end  limited width container -->
   </section>
   <div class="container">
@@ -78,11 +84,6 @@
             <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
               <header id="main-content-header">
 
-                <?php if ($title): ?>
-                  <h1 id="page-title"<?php print $attributes; ?>>
-                    <?php print $title; ?>
-                  </h1>
-                <?php endif; ?>
 
                 <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
                   <div id="tasks">
