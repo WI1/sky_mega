@@ -67,6 +67,8 @@
 
   regions[sidebar_first]     = Sidebar first
   regions[sidebar_second]    = Sidebar second
+  regions[left_meta]         = Left of Meta Bar
+  regions[right_meta]        = Right of Meta Bar
   regions[top_menu]          = Top menu bar
   regions[header]            = Header
   regions[hero_banner]       = Hero Banner
