@@ -11,14 +11,18 @@
     background: #e9edf2;
 }
 
+/* Branding */
+
+#logo {
+    padding: 0 10px 0 0;
+    float: left;
+}
+
 /*Top Main Menu */
 .region-top-menu ul.menu a {
     font-size: 1.2em;
     font-weight: 600;
 }
-
-
-
 /*
    Main Menu
 */
