@@ -48,18 +48,6 @@ img.site-logo {
   margin: 15px auto;
 }
 
-/* 
-   Main Menu
-*/
-.region-top-menu {
-  float: none; 
-/*  background-color: transparent;*/
-}
-
-
-.region-top-menu .block-inner {
-  margin: 5px 10px;
-}
 
 .mb-fa ul.menu {
   padding: 0 1em 0 0;
