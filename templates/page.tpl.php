@@ -4,7 +4,7 @@
             <?php if ($page['left_meta']): ?>
                 <div id="left-meta"><?php print render($page['left_meta']); ?></div>
             <?php endif; ?>
-            <?php if ($pahe['right_meta']): ?>
+            <?php if ($page['right_meta']): ?>
                 <div id="right-meta"><?php print render($page['right_meta']); ?></div>
             <?php endif; ?>
         </div>
