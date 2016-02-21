@@ -30,3 +30,12 @@
 .region-top-menu .block-inner {
     margin: 5px 10px;
 }
+
+/*
+   Hero
+*/
+
+#page > #hero {
+    background: url("/sites/all/themes/skywi1/img/FAU/siegel-zuv.png") no-repeat 95% 20%,radial-gradient(ellipse at center, #0049b3 0%,#003366 100%);
+    min-height: 120px;
+}
