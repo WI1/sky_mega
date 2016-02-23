@@ -110,3 +110,11 @@ function skywi1_process_region(&$vars) {
     $vars['inner_prefix'] = '<h2 class="menu-toggle"><a href="#">' . t('Menu') . '</a></h2>';
   }
 }
+
+/**
+ * hook_form_FORM_ID_alter
+ */
+function skywi1_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+    $form['search_block_form']['#default_value'] = t('Search for...'); // Set a default value for the textfield
+
+}
