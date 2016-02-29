@@ -172,11 +172,7 @@ div.frame-image {
 .view-dressings .view-content {
   clear: right;
 }
-div.views-field.views-field-title .field-content {
-  font-size: 16px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
+
 .view-dressings .views-view-grid .views-field.views-field-title, .view-dressings .views-view-grid .views-field.views-field-body {
   padding: 0 15px;
   
