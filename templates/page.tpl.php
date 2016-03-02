@@ -10,42 +10,42 @@
                 <?php endif; ?>
             </div>
         </section>
+      <header id="header" class="clearfix" role="banner">
+        <div class="container">
+        <?php if ($site_logo || $site_name || $site_slogan): ?>
+          <!-- start: Branding -->
+          <div id="branding" class="branding-elements clearfix">
+
+            <?php if ($site_logo): ?>
+              <div id="logo">
+                <?php print $site_logo; ?>
+              </div>
+            <?php endif; ?>
+
+            <?php if ($site_name || $site_slogan): ?>
+              <!-- start: Site name and Slogan hgroup -->
+              <div id="name-and-slogan"<?php print $hgroup_attributes; ?>>
+
+                <?php if ($site_name): ?>
+                  <div id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></div>
+                <?php endif; ?>
+
+                <?php if ($site_slogan): ?>
+                  <div id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></div>
+                <?php endif; ?>
+
+              </div><!-- /end #name-and-slogan -->
+
+            <?php endif; ?>
+          </div><!-- /end #branding -->
+        <?php endif; ?>
+
+        <?php print render($page['header']); ?>
+        <?php print render($page['top_menu']); ?>
+            <a href="https://www.rw.fau.de/" target="_blank"><div id="fau-logo"></div></a>
+        </div><!-- /end  limited width container -->
+      </header>
     </div>
-  <header id="header" class="clearfix" role="banner">
-    <div class="container">
-    <?php if ($site_logo || $site_name || $site_slogan): ?>
-      <!-- start: Branding -->
-      <div id="branding" class="branding-elements clearfix">
-
-        <?php if ($site_logo): ?>
-          <div id="logo">
-            <?php print $site_logo; ?>
-          </div>
-        <?php endif; ?>
-
-        <?php if ($site_name || $site_slogan): ?>
-          <!-- start: Site name and Slogan hgroup -->
-          <div id="name-and-slogan"<?php print $hgroup_attributes; ?>>
-
-            <?php if ($site_name): ?>
-              <div id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></div>
-            <?php endif; ?>
-
-            <?php if ($site_slogan): ?>
-              <div id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></div>
-            <?php endif; ?>
-
-          </div><!-- /end #name-and-slogan -->
-
-        <?php endif; ?>
-      </div><!-- /end #branding -->
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-    <?php print render($page['top_menu']); ?>
-        <a href="https://www.rw.fau.de/"><div id="fau-logo"></div></a>
-    </div><!-- /end  limited width container -->
-  </header>
   <section id="hero" class="clearfix" role="banner">
       <div class="banner-container">
           <?php print render($page['hero_banner']); ?>
