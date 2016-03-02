@@ -1,14 +1,16 @@
 <div id="page" class="<?php print $classes; ?>">
-    <section id="meta">
-        <div class="container">
-            <?php if ($page['left_meta']): ?>
-                <div id="left-meta"><?php print render($page['left_meta']); ?></div>
-            <?php endif; ?>
-            <?php if ($page['right_meta']): ?>
-                <div id="right-meta"><?php print render($page['right_meta']); ?></div>
-            <?php endif; ?>
-        </div>
-    </section>
+    <div id="fixed-top>
+        <section id="meta">
+            <div class="container">
+                <?php if ($page['left_meta']): ?>
+                    <div id="left-meta"><?php print render($page['left_meta']); ?></div>
+                <?php endif; ?>
+                <?php if ($page['right_meta']): ?>
+                    <div id="right-meta"><?php print render($page['right_meta']); ?></div>
+                <?php endif; ?>
+            </div>
+        </section>
+    </div>
   <header id="header" class="clearfix" role="banner">
     <div class="container">
     <?php if ($site_logo || $site_name || $site_slogan): ?>
@@ -41,7 +43,7 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['top_menu']); ?>
-        <div id="fau-logo"></div>
+        <a href="https://www.rw.fau.de/"><div id="fau-logo"></div></a>
     </div><!-- /end  limited width container -->
   </header>
   <section id="hero" class="clearfix" role="banner">
