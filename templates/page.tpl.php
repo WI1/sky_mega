@@ -1,5 +1,5 @@
 <div id="page" class="<?php print $classes; ?>">
-    <div id="fixed-top>
+    <div id="fixed-top">
         <section id="meta">
             <div class="container">
                 <?php if ($page['left_meta']): ?>
