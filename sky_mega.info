@@ -1,6 +1,6 @@
 
 ;----------// Theme info
-  name        = Sky Wi1
+  name        = Sky Mega
   description = A minimal, re-colorable theme for Drupal 7 that uses HTML5 and <a title="Rocking the hardest since 2006" href="http://drupal.org/project/adaptivetheme">Adaptivetheme 7.x-3.x</a> base theme.
   core        = 7.x
   release     = 7.x-1.x
@@ -450,5 +450,5 @@
 
 version = "7.x-1.0"
 core = "7.x"
-project = "skywi1"
+project = "sky_mega"
 

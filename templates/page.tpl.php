@@ -45,7 +45,7 @@
             <a href="https://www.rw.fau.de/" target="_blank"><div id="fau-logo"></div></a>
         </div><!-- /end  limited width container -->
       </header>
-    </div>
+    </div><!-- /end #fixed-top -->
   <section id="hero" class="clearfix" role="banner">
       <div class="banner-container">
           <?php print render($page['hero_banner']); ?>
