@@ -1,170 +1,95 @@
-<div id="page" class="<?php print $classes; ?>">
+<?php
 
-  <header id="header" class="clearfix" role="banner">
-    <div class="container">
-    <?php if ($site_logo || $site_name || $site_slogan): ?>
-      <!-- start: Branding -->
-      <div id="branding" class="branding-elements clearfix">
+/**
+ * @file
+ * Default theme implementation to display a single Drupal page while offline.
+ *
+ * All the available variables are mirrored in html.tpl.php and page.tpl.php.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_maintenance_page()
+ *
+ * @ingroup themeable
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 
-        <?php if ($site_logo): ?>
-          <div id="logo">
-            <?php print $site_logo; ?>
-          </div>
+<head>
+  <title><?php print $head_title; ?></title>
+  <?php print $head; ?>
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
+</head>
+<body class="<?php print $classes; ?>">
+  <div id="page">
+    <div id="header">
+      <div id="logo-title">
+
+        <?php if (!empty($logo)): ?>
+          <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          </a>
         <?php endif; ?>
 
-        <?php if ($site_name || $site_slogan): ?>
-          <!-- start: Site name and Slogan hgroup -->
-          <div id="name-and-slogan"<?php print $hgroup_attributes; ?>>
+        <div id="name-and-slogan">
+          <?php if (!empty($site_name)): ?>
+            <h1 id="site-name">
+              <a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+            </h1>
+          <?php endif; ?>
 
-            <?php if ($site_name): ?>
-              <h1 id="site-name"<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-            <?php endif; ?>
+          <?php if (!empty($site_slogan)): ?>
+            <div id="site-slogan"><?php print $site_slogan; ?></div>
+          <?php endif; ?>
+        </div> <!-- /name-and-slogan -->
+      </div> <!-- /logo-title -->
 
-            <?php if ($site_slogan): ?>
-              <h2 id="site-slogan"<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-            <?php endif; ?>
-
-          </div><!-- /end #name-and-slogan -->
-
-        <?php endif; ?>
-
-      </div><!-- /end #branding -->
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-
-    </div><!-- /end  limited width container -->
-  </header>
-  <div class="container">
-  <?php print render($page['menu_bar']); ?>
-  <?php print render($page['top_menu']); ?>
-  <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
-    <div class="columns-inner clearfix">
-
-      <?php print $messages; ?>
-      <?php print render($page['help']); ?>
-      <?php print render($page['secondary_content']); ?>
-
-      <?php if (
-        $page['three_33_top'] ||
-        $page['three_33_first'] ||
-        $page['three_33_second'] ||
-        $page['three_33_third'] ||
-        $page['three_33_bottom']
-        ): ?>
-        <!-- Three column 3x33 Gpanel -->
-        <div class="at-panel gpanel panel-display three-3x33 clearfix">
-          <?php print render($page['three_33_top']); ?>
-          <?php print render($page['three_33_first']); ?>
-          <?php print render($page['three_33_second']); ?>
-          <?php print render($page['three_33_third']); ?>
-          <?php print render($page['three_33_bottom']); ?>
+      <?php if (!empty($header)): ?>
+        <div id="header-region">
+          <?php print $header; ?>
         </div>
       <?php endif; ?>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+    </div> <!-- /header -->
 
-      <div id="content-column">
-        <div class="content-inner">
+    <div id="container" class="clearfix">
 
-          <?php print render($page['highlighted']); ?>
-
-          <<?php print $tag; ?> id="main-content" role="main">
-
-            <?php print render($title_prefix); ?>
-            <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
-              <header id="main-content-header">
-
-                <?php if ($title): ?>
-                  <h1 id="page-title"<?php print $attributes; ?>>
-                    <?php// print $title; ?>
-                  </h1>
-                <?php endif; ?>
-
-                <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
-                  <div id="tasks">
-
-                    <?php if ($primary_local_tasks): ?>
-                      <ul class="tabs primary clearfix"><?php print render($primary_local_tasks); ?></ul>
-                    <?php endif; ?>
-
-                    <?php if ($secondary_local_tasks): ?>
-                      <ul class="tabs secondary clearfix"><?php print render($secondary_local_tasks); ?></ul>
-                    <?php endif; ?>
-
-                    <?php if ($action_links = render($action_links)): ?>
-                      <ul class="action-links clearfix"><?php print $action_links; ?></ul>
-                    <?php endif; ?>
-
-                  </div>
-                <?php endif; ?>
-
-              </header>
-            <?php endif; ?>
-            <?php print render($title_suffix); ?>
-
-            <!-- region: Main Content -->
-            <?php if ($content = render($page['content'])): ?>
-              <div id="content">
-                <?php print $content; ?>
-              </div>
-            <?php endif; ?>
-
-            <?php print $feed_icons; ?>
-
-          </<?php print $tag; ?>>
-
-          <?php print render($page['content_aside']); ?>
-
-        </div>
-      </div>
-
-      <?php print render($page['sidebar_first']); ?>
-      <?php print render($page['sidebar_second']); ?>
-      <?php print render($page['tertiary_content']); ?>
-
-    </div>
-  </div>
-
-  </div><!-- /end  limited width container -->
-  
-  <?php if (
-    $page['footer'] ||
-    $page['four_first'] ||
-    $page['four_second'] ||
-    $page['four_third'] ||
-    $page['four_fourth']
-    ): ?>
-    <footer role="contentinfo">
-      <div class="container">
-      <?php if (
-        $page['four_first'] ||
-        $page['four_second'] ||
-        $page['four_third'] ||
-        $page['four_fourth']
-        ): ?>
-        <!-- Four column Gpanel -->
-        <div class="at-panel gpanel panel-display four-4x25 clearfix">
-          <div class="panel-row row-1 clearfix">
-            <?php print render($page['four_first']); ?>
-            <?php print render($page['four_second']); ?>
-          </div>
-          <div class="panel-row row-2 clearfix">
-            <?php print render($page['four_third']); ?>
-            <?php print render($page['four_fourth']); ?>
-          </div>
-        </div>
+      <?php if (!empty($sidebar_first)): ?>
+        <div id="sidebar-first" class="column sidebar">
+          <?php print $sidebar_first; ?>
+        </div> <!-- /sidebar-first -->
       <?php endif; ?>
-      <?php if ($page['footer']): print render($page['footer']); endif; ?>
-      </div><!-- /end  limited width container -->
-    </footer>
-  <?php endif; ?>
-</div><!-- //End #page, .container -->
 
+      <div id="main" class="column"><div id="main-squeeze">
 
-<?php if ($collapsible = render($page['collapsible'])): ?>
-  <section id="section-collapsible" class="section-collapsible clearfix">
-    <h2 class="collapsible-toggle"><a href="#"><?php print t('Toggle collapsible region'); ?></a></h2>
-    <?php print $collapsible; ?>
-  </section>
-<?php endif; ?>
+        <div id="content">
+          <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php if (!empty($messages)): print $messages; endif; ?>
+          <div id="content-content" class="clearfix">
+            <?php print $content; ?>
+          </div> <!-- /content-content -->
+        </div> <!-- /content -->
+
+      </div></div> <!-- /main-squeeze /main -->
+
+      <?php if (!empty($sidebar_second)): ?>
+        <div id="sidebar-second" class="column sidebar">
+          <?php print $sidebar_second; ?>
+        </div> <!-- /sidebar-second -->
+      <?php endif; ?>
+
+    </div> <!-- /container -->
+
+    <div id="footer-wrapper">
+      <div id="footer">
+        <?php if (!empty($footer)): print $footer; endif; ?>
+      </div> <!-- /footer -->
+    </div> <!-- /footer-wrapper -->
+
+  </div> <!-- /page -->
+
+</body>
+</html>
