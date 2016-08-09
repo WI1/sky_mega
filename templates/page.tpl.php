@@ -41,7 +41,7 @@
     <div class="banner-container">
       <?php print render($page['hero_banner']); ?>
     </div><!-- /end  limited width banner container -->
-    </div><!-- /end  limited width container -->
+    
   </section>
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
     <div class="columns-inner clearfix">
