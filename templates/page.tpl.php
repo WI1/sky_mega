@@ -1,7 +1,5 @@
 <div id="page" class="container <?php print $classes; ?>">
 
-  <?php print render($page['top_menu']); ?>
-
   <header id="header" class="clearfix" role="banner">
 
     <?php if ($site_logo || $site_name || $site_slogan): ?>
@@ -32,7 +30,7 @@
 
       </div><!-- /end #branding -->
     <?php endif; ?>
-
+    <?php print render($page['top_menu']); ?>
     <?php print render($page['header']); ?>
     <?php print render($page['menu_bar']); ?>
 
@@ -41,7 +39,7 @@
     <div class="banner-container">
       <?php print render($page['hero_banner']); ?>
     </div><!-- /end  limited width banner container -->
-    
+
   </section>
   <div id="columns"<?php print $page['menu_bar'] ? 'class="no-menu-bar"' : '' ;?>>
     <div class="columns-inner clearfix">
