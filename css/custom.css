@@ -187,24 +187,6 @@ div.frame-image {
   top: 375px;
 }
 
-div.view-dressings .views-field-body .field-content {
-  font-size: 12px;
-  text-align: justify;
-}
-div.view-dressings .views-field-field-dressing-teaser .field-content img {
-  max-width: none;
-  border: solid 1px #e6e4de;
-  padding-bottom: 50px;
-}
-
-.view-dressings .views-view-grid .span4 {
-  padding-bottom: 0px;
-  padding-right: 0px;
-  position: relative;
-  float: left;
-  width: 320px;
-}
-
 #boxes-box-facebook_sideblock {
   margin-top: 10px;
 }
@@ -232,7 +214,7 @@ div.field.field-name-field-blog-teaser.field-type-image.field-label-hidden.view-
 
 /*Site text formatting*/
 div.field-name-body.view-mode-full, div.field-name-body.view-mode-full, section.panel-pane .block-content {
-  text-align: justify;
+
 }
 
 /*Firefox formatting bugs
