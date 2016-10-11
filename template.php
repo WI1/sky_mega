@@ -115,6 +115,6 @@ function sky_mega_process_region(&$vars) {
  * hook_form_FORM_ID_alter
  */
 function sky_mega_form_search_block_form_alter(&$form, &$form_state, $form_id) {
-    $form['search_block_form']['#default_value'] = t('Search for...'); // Set a default value for the textfield
+    $form['search_block_form']['#default_value'] = t(''); // Set a default value for the textfield
 
 }
