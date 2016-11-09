@@ -118,3 +118,13 @@ function sky_mega_form_search_block_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#default_value'] = t(''); // Set a default value for the textfield
 
 }
+
+/*hook_form_FORM_ID_alter modify the view for termine and have a german label there*/
+
+function sky_mega_form_views_exposed_form_alter(&$form, $form_state, $form_id) {
+
+  if($form_state['view']->name == 'events') {
+    $form['field_event_type_tid']['#options']['All'] = t('- Alle Kategorien -'); // overrides <All> on the dropdown
+  }
+}
+
